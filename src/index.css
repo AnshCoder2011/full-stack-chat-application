@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("/bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  object-fit: cover;
+}
+
+.container {
+  width: 82vw;
+  height: 90vh;
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.loading {
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+}
+
+/* Responsiveness ke liye media queries */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    height: 95vh;
+  }
+
+  .loading {
+    padding: 30px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95vw;
+    height: 98vh;
+  }
+
+  .loading {
+    padding: 20px;
+    font-size: 24px;
+  }
+}

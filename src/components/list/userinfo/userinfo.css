@@ -1,0 +1,76 @@
+.userInfo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 20px;
+    img {
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Responsiveness ke liye media queries */
+
+@media screen and (max-width: 768px) {
+  .userInfo {
+    padding: 15px;
+    
+    .user {
+      gap: 15px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    
+    .icons {
+      gap: 15px;
+      img {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .userInfo {
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    
+    .user {
+      gap: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    
+    .icons {
+      gap: 10px;
+      img {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}

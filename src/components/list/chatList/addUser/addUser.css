@@ -1,0 +1,116 @@
+.addUser {
+  width: max-content;
+  height: max-content;
+  padding: 30px;
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  form {
+    display: flex;
+    gap: 20px;
+
+    input {
+      padding: 20px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #3782e4f5;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .user {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .detail {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #0c5dc8;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Responsiveness ke liye media queries */
+
+@media screen and (max-width: 768px) {
+  .addUser {
+    width: 90%;
+    padding: 20px;
+
+    form {
+      flex-direction: column;
+
+      input, button {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+
+    .user {
+      flex-direction: column;
+      gap: 20px;
+
+      .detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .addUser {
+    padding: 15px;
+
+    form {
+      input, button {
+        padding: 12px;
+      }
+    }
+
+    .user {
+      .detail {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
